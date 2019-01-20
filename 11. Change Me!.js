@@ -1,31 +1,30 @@
 function changeMe(arr) {
   // you can only write your code here!
   if(arr.length==0){
-      console.log("");
+    console.log([]);
   }
-
-  for(var i=0;i<=arr.length-1;i++){
-      console.log([i+1] +"."+ arr[i][0] + " "+ arr[i][1] + " :")
-      var SuperHeroObject={}
-      SuperHeroObject['firsName'] = arr[i][0]
-      SuperHeroObject['lastName'] = arr[i][1]
-      SuperHeroObject['gender']   = arr[i][2]
-      if(arr[i][3] === undefined || arr[i][3] > 2018){
-          SuperHeroObject['age'] = 'invalid'
-      }else{
-          SuperHeroObject['age'] = 2018 - arr[i][3]
-      }
-      console.log(SuperHeroObject);
-    }
-
+  for(var i = 0; i < arr.length; i++){
+    var obj = {} 
+    console.log(i+1 +'. '+ arr[i][0] +' '+ arr[i][1] + ' :')
+     
+    obj.firstName = arr[i][0]
+    obj.lastName = arr[i][1]
+    obj.gender = arr[i][2]
+    if(arr[i][3] === '' || arr[i][3] === undefined || arr[i][3] > 2018){
+        obj.age = 'Invalid Birth Year'
+     } else {
+        obj.age = 2018 - arr[i][3]
+     }
+     console.log(obj)
   }
+}
 
 // TEST CASES
 changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]); // 1. Christ Evans:
 // { firstName: 'Christ',
 //   lastName: 'Evans',
 //   gender: 'Male',
-//   age: 36 }
+//   age: 37 }
 // 2. Robert Downey:
 // { firstName: 'Robert',
 //   lastName: 'Downey',
