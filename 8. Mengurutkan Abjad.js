@@ -1,15 +1,15 @@
 function urutkanAbjad(str) {
   // you can only write your code here!
-  var alphabet="abcdefghijklmnopqrstuvwxyz"
-  var string=""
-  for(var i=0;i<=alphabet.length-1;i++){
-      for(var j=0;j<=str.length-1;j++){
-          if(alphabet[i] === str[j]){
-             string+=str[j];
-            }
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  var result = ''
+  for(var i = 0; i < alphabet.length; i++){
+     for(var j = 0; j < str.length; j++){
+        if(alphabet[i] === str[j]){
+           result += alphabet[i]
         }
-    }
-        return string;
+     }
+  }
+  return result
 }
 
 // TEST CASES
