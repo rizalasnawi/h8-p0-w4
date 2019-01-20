@@ -1,16 +1,23 @@
 function fpb(angka1, angka2) {
   // you can only write your code here!
-  var a= angka1;
-  var b=angka2;
-  var hasil=angka1%angka2
+  // var result = i
+  // for(var i = 1; i <= angka1; i++){
+  //    if(angka1 % i == 0 && angka2 % i == 0){
+  //       result = i
+  //    }
+  // }
+  // return result
 
-  while(hasil!=0){
-      a=b
-      b=hasil
-      hasil=a%b
+  var a = angka1
+  var b = angka2
+  var hasil = a % b
+
+  while (hasil != 0){
+     var a = b
+     var b = hasil
+     var hasil = a % b
   }
-  return b;
-  
+  return b
 }
 
 // TEST CASES
