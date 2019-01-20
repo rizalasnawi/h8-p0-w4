@@ -1,14 +1,13 @@
 function checkAB(num) {
   // you can only write your code here!
-
-  for(var i=0;i<=num.length-1;i++){
-        if(num[i] === 'a' && num[i+4] === 'b'){
-            return true;
-        }else if(num[i] === 'b'&& num[i+4] === 'a'){
-            return true;
-      }
+  for(var i = 0; i < num.length; i++){
+     if(num[i] === 'a' && num[i+4] === 'b'){
+        return true
+     } else if(num[i] === 'b' && num[i+4] === 'a'){
+        return true
+     }
   }
-  return false;
+  return false
 }
 
 // TEST CASES
