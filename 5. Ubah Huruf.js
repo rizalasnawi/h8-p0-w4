@@ -1,15 +1,17 @@
 function ubahHuruf(kata) {
   // you can only write your code here!
-  var alphabet = "abcdefghijklmnopqrstuvwxyz";
-  var hasil=""
-  for(var i=0; i<kata.length; i++){
-     for(var j=0; j<alphabet.length;j++){
-         if(kata[i] == alphabet[j]){
-             hasil+=alphabet[j+1]
-         }
-     }
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  var result = ''
+  for (var i = 0; i < kata.length; i++) {
+    for (var j = 0; j < alphabet.length; j++) {
+      if (kata[i] === alphabet[j]) {
+          result += alphabet[j + 1]
+      } else if(kata [i] == alphabet[alphabet.length -1]){
+          result += alphabet[0]
+      }
+    }
   }
-  return hasil;
+  return result
 }
 
 // TEST CASES
